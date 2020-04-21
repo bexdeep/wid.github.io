@@ -6,7 +6,6 @@
 
 body {
   background-color: var(--main-bg-color);
-  overflow: hidden;
 }
 
 .color-main {
@@ -25,7 +24,23 @@ body {
   left: 75vw;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
+  .headingmsg {
+    font-size: 2rem;
+  }
+  .left-img {
+    position: absolute;
+    left: -40vw;
+    top: -150px;
+  }
+  .bottom-img {
+    position: absolute;
+    top: 50vh;
+    left: -30vw;
+  }
+}
+
+@media screen and (min-width: 414px) {
   .headingmsg {
     font-size: 2rem;
   }
