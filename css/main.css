@@ -58,6 +58,11 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .left-img {
+    position: absolute;
+    left: -8vw;
+    top: -90px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
