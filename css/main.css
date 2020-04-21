@@ -4,9 +4,16 @@
   --main-alt-color: #fff;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 body {
   background-color: var(--main-bg-color);
-  overflow: hidden;
 }
 
 .color-main {
