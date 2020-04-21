@@ -1,0 +1,64 @@
+:root {
+  --main-bg-color: #262525;
+  --main-color: #fdd219;
+  --main-alt-color: #fff;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+}
+
+.color-main {
+  color: var(--main-color);
+}
+.color-light {
+  color: var(--main-alt-color);
+}
+
+.low-priority-text {
+  opacity: 0.5;
+}
+
+.right-img {
+  position: absolute;
+  left: 75vw;
+}
+
+@media screen and (min-width: 480px) {
+  .headingmsg {
+    font-size: 2rem;
+  }
+  .left-img {
+    position: absolute;
+    left: -40vw;
+    top: -150px;
+  }
+  .bottom-img {
+    position: absolute;
+    top: 50vh;
+    left: -30vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headingmsg {
+    font-size: 3.75rem;
+  }
+  .left-img {
+    position: absolute;
+    left: -20vw;
+    top: -90px;
+  }
+  .bottom-img {
+    position: absolute;
+    left: 5vw;
+    top: 45vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
