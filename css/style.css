@@ -145,6 +145,9 @@ body{
     margin-top: -25px;
 }
 
+.banner-image img{
+    width:100%;
+}
 .footer {
     font-size: .8rem;
     color: var(--light-grey);
@@ -162,6 +165,9 @@ body{
 }
 
 @media (max-width: 1000px) {
+    .main{
+        width:90%;
+    }
     .banner{
         display: block;
     }
@@ -179,6 +185,10 @@ body{
     }
     .body{
         height: auto;
+    }
+    .footer{
+        font-size: .6rem;
+        width:100%;
     }
   }
 
