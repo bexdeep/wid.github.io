@@ -1,0 +1,189 @@
+:root {
+    --brand-color: #FDD219;
+    --dark-green: #0C1314;
+    --dark-light-green: #242E31;
+    --light-text: rgba(255, 255, 255, 0.75);
+    --brand-light: rgba(253, 210, 25, 0.65);
+    --light-grey: rgba(200, 200, 200, 0.4);
+    --button-hover: #CEAC17;
+}
+
+body{
+    font-family: Roboto, Arial;
+    height: 100vh;
+    background: linear-gradient(119.28deg,var(--dark-light-green) 4.69%,var(--dark-green) 85.69%);
+}
+
+/* Utility Tags*/
+.mar-high{
+    margin-top: 80px;
+}
+
+.mar-mid{
+    margin-top: 30px;
+}
+
+/* Utility Tags End*/
+
+.main{
+    width:80%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items:center;
+}
+.logo {
+    width: 43px;
+    height: 43px;
+    border-radius: 4px;
+}
+
+.tag{
+    margin-left: 10px;
+}
+.business-name{
+    font-size: 1rem;
+    color: var(--brand-color);
+}
+
+.business-tag{
+    font-size: .6rem;
+    color: var(--brand-light);
+}
+
+.title, .banner h2{
+    font-family: 'Encode Sans Expanded', Arial;
+}
+
+.title {
+    color:var(--brand-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.banner{
+    display: flex;
+}
+
+.banner-text{
+    width:60%;
+}
+.banner h2{
+    color:var(--brand-light);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.banner h1{
+    color:var(--light-text);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.quote {
+    color: var(--brand-light);
+    font-size: 1.2rem;
+    width: 60%;
+
+}
+
+.quote-text{
+        font-weight: 400;
+}
+
+.quote-author{
+    font-weight: 300;
+}
+
+.quote{
+    border-left: 6px solid var(--brand-light);
+    padding: 40px 40px;
+}
+
+.cta{
+    display: flex;
+}
+
+.cta a{
+    text-decoration: none;
+}
+.button{
+    background-color: var(--brand-light);
+    font-size: 1.2rem;
+    width: 250px;
+    color: var(--dark-green);
+    border-radius: 4px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.button:hover{
+ background-color: var(--button-hover);
+ box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.2);   
+}
+
+.button:active{
+    background-color: var(--brand-light);
+    box-shadow: none;
+}
+
+.friendly-text{    
+    font-size: 1.2rem;
+    color: var(--brand-light);
+    padding-left: 10px;
+    padding-top: 15px;
+    font-weight: 300;
+}
+
+.banner-image p{
+    font-size: .7rem;
+    color: var(--light-grey);
+    font-weight: 300;
+    margin-left: 38px;
+    margin-top: -25px;
+}
+
+.footer {
+    font-size: .8rem;
+    color: var(--light-grey);
+    font-weight: 300;
+}
+
+.footer{
+    display:flex;
+    width: 380px;
+    margin: 20px auto;    
+}
+
+.footer p{
+    padding-left:10px;
+}
+
+@media (max-width: 1000px) {
+    .banner{
+        display: block;
+    }
+    .banner-text{
+        width:100%;
+    }
+
+    .quote{
+        width:100%;
+        padding: 20px 20px;
+        font-size: 1rem;
+    }
+    .spacer{
+        height: 50px;;
+    }
+    .body{
+        height: auto;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .main{
+        width:60%;
+    }
+  }
