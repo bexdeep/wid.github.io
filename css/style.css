@@ -10,8 +10,8 @@
 
 body{
     font-family: Roboto, Arial;
-    background-attachment: fixed;
     background: linear-gradient(119.28deg,var(--dark-light-green) 4.69%,var(--dark-green) 85.69%);
+    background-attachment: fixed;
 }
 
 /* Utility Tags*/
