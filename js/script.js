@@ -1,14 +1,3 @@
-window.onload = function () {
-    const button = document.getElementById("ctaButton");
-    button.onmouseover = () => {
-        console.log(button.className);
-        if (button.ClassName == "button buttonvisible") {
-            button.classList.remove("buttonvisible");
-        }
-
-    }
-};
-
 window.addEventListener('scroll', () => {
     const button = document.getElementById("ctaButton");
     const windowHeight = window.innerHeight;
