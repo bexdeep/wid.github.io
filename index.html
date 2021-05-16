@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/ico" href="assets/weinnovatedesign-logo.svg" />
     <script src="js/script.js"></script>
@@ -17,8 +19,8 @@
 
 
 <body>
-    <div class="main">
-        <div class="header mar-mid">
+    <div id="main">
+        <div id="header" class="mar-mid">
             <img class="logo" src="./assets/weinnovatedesign-logo.svg" alt="">
             <div class="tag">
                 <div class="business-name">weinnovate.design</div>
@@ -38,7 +40,7 @@
                 </div>
                 <div class="cta mar-mid">
                     <a href="https://www.linkedin.com/in/deepsherchan/" target="_blank">
-                        <div class="button">
+                        <div onmouseover="animateButton()" id="ctaButton" class="button">
                             <svg id="linkedin-logo" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

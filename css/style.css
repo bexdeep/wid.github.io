@@ -28,34 +28,50 @@ body{
 
 /* Animating SVG */
 
-#linkedin-logo path:nth-child(1){
+.button:hover path:nth-child(1){
+    stroke-dasharray: 25px;
+    animation: line-anim-hov-body .8s ease forwards;
+}
+.button:hover path:nth-child(2){
+    stroke-dasharray: 25px;
+    animation: line-anim-hov-head .8s ease forwards;
+}
+.button:hover path:nth-child(3), .button:hover path:nth-child(4){
+    stroke-dasharray: 25px;
+    animation: line-anim-hov-b 1s ease forwards;
+}
+
+@keyframes line-anim-hov-body{    
+    0%{stroke-dashoffset: 25px;}
+    100%{stroke-dashoffset: 0px;}
+}
+
+@keyframes line-anim-hov-head{    
+    0%{stroke-dashoffset: 25px;}
+    20%{stroke-dashoffset: 25px;}
+    100%{stroke-dashoffset: 0px;}
+}
+
+@keyframes line-anim-hov-b{
+    0%{stroke-dashoffset: 7px;}
+    40%{stroke-dashoffset: 7px;}
+    100%{stroke-dashoffset: 0px;}
+}
+
+.buttonvisible path:nth-child(1){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
-    animation: line-anim .8s ease forwards;
-    
+    animation: line-anim  .8s ease forwards;
 }
-
-#linkedin-logo path:nth-child(2){
+.buttonvisible path:nth-child(2){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
-    animation: line-anim .8s ease forwards .3s;
-  
+    animation: line-anim  .8s ease forwards .3s;
 }
-
-#linkedin-logo path:nth-child(4){
-  stroke-dasharray: 7px;
-  stroke-dashoffset: 7px;
-  animation: line-anim .8s ease forwards .8s;
-
-    
-}
-
-#linkedin-logo path:nth-child(3){
-  stroke-dasharray: 7px;
-  stroke-dashoffset: 7px;
-  animation: line-anim .8s ease forwards 1s;
-
-    
+.buttonvisible path:nth-child(3), .buttonvisible path:nth-child(4){
+    stroke-dasharray: 7px;
+    stroke-dashoffset: 7px;
+    animation: line-anim .5s ease forwards .5s;
 }
 
 @keyframes line-anim{
@@ -63,14 +79,15 @@ body{
         stroke-dashoffset: 0px;
     }
 }
+
 /* Animating SVG Ends */
 
-.main{
+#main{
     width:80%;
     margin: 0 auto;
 }
 
-.header{
+#header{
     display: flex;
     align-items:center;
 }
@@ -170,10 +187,11 @@ body{
 }
 
 .friendly-text{    
+    font-family: 'Shadows Into Light', cursive;
     font-size: 1.2rem;
     color: var(--brand-light);
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 8px;
     font-weight: 300;
 }
 
@@ -205,7 +223,7 @@ body{
 }
 
 @media (max-width: 1000px) {
-    .main{
+    #main{
         width:90%;
     }
     .banner{
@@ -239,7 +257,7 @@ body{
   }
 
   @media (min-width: 1700px) {
-    .main{
+    #main{
         width:60%;
     }
   }
