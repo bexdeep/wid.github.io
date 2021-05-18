@@ -58,17 +58,17 @@ body{
     100%{stroke-dashoffset: 0px;}
 }
 
-.buttonvisible path:nth-child(1){
+.animateButton path:nth-child(1){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
     animation: line-anim  .8s ease forwards;
 }
-.buttonvisible path:nth-child(2){
+.animateButton path:nth-child(2){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
     animation: line-anim  .8s ease forwards .3s;
 }
-.buttonvisible path:nth-child(3), .buttonvisible path:nth-child(4){
+.animateButton path:nth-child(3), .animateButton path:nth-child(4){
     stroke-dasharray: 7px;
     stroke-dashoffset: 7px;
     animation: line-anim .5s ease forwards .5s;
