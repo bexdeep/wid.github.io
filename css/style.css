@@ -28,53 +28,23 @@ body{
 
 /* Animating SVG */
 
-.button:hover path:nth-child(1){
-    stroke-dasharray: 25px;
-    animation: line-anim-hov-body .8s ease forwards;
-}
-.button:hover path:nth-child(2){
-    stroke-dasharray: 25px;
-    animation: line-anim-hov-head .8s ease forwards;
-}
-.button:hover path:nth-child(3), .button:hover path:nth-child(4){
-    stroke-dasharray: 25px;
-    animation: line-anim-hov-b 1s ease forwards;
-}
-
-@keyframes line-anim-hov-body{    
-    0%{stroke-dashoffset: 25px;}
-    100%{stroke-dashoffset: 0px;}
-}
-
-@keyframes line-anim-hov-head{    
-    0%{stroke-dashoffset: 25px;}
-    20%{stroke-dashoffset: 25px;}
-    100%{stroke-dashoffset: 0px;}
-}
-
-@keyframes line-anim-hov-b{
-    0%{stroke-dashoffset: 7px;}
-    40%{stroke-dashoffset: 7px;}
-    100%{stroke-dashoffset: 0px;}
-}
-
 .animateButton path:nth-child(1){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
-    animation: line-anim  .8s ease forwards;
+    animation: animate-icon .8s ease forwards;
 }
 .animateButton path:nth-child(2){
     stroke-dasharray: 25px;
     stroke-dashoffset: 25px;
-    animation: line-anim  .8s ease forwards .3s;
+    animation: animate-icon  .8s ease forwards .3s;
 }
 .animateButton path:nth-child(3), .animateButton path:nth-child(4){
     stroke-dasharray: 7px;
     stroke-dashoffset: 7px;
-    animation: line-anim .5s ease forwards .5s;
+    animation: animate-icon .5s ease forwards .5s;
 }
 
-@keyframes line-anim{
+@keyframes animate-icon{
     to{
         stroke-dashoffset: 0px;
     }
@@ -253,6 +223,9 @@ body{
     .button:active{
         background-color: var(--light-text);
         box-shadow: none;
+    }
+    .banner-image p{
+        font-size: .5rem;
     }
   }
 
